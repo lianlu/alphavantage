@@ -122,7 +122,7 @@ func (c *Client) getCSV(path string, query url.Values, f func(header, record []s
 	if err != nil {
 		return err
 	}
-	req.Header.Set("Accept", "text/csv")
+	//req.Header.Set("Accept", "text/csv")
 
 	// Send the HTTP request.
 	resp, err := c.client.Do(req)
